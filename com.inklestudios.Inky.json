@@ -1,9 +1,9 @@
 {
     "app-id": "com.inklestudios.Inky",
     "base": "org.electronjs.Electron2.BaseApp",
-    "base-version": "20.08",
+    "base-version": "21.08",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "inky",
     "separate-locales": false,
@@ -24,8 +24,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/manuq/inky/releases/download/alpha/Inky-linux-x64.zip",
-                    "sha256": "e6150f1d999a83a4a4ed7af478366136540f361fbe85f09c21dacc01d2e8b380",
+                    "url": "https://github.com/inkle/inky/releases/download/0.12.0/Inky_linux.zip",
+                    "sha256": "59c0d842e9acbfc5bf3172d5e10d5e1a1f4ffe9a852f4efa0f52752ad9a5f2eb",
                     "only-arches": [
                         "x86_64"
                     ]
