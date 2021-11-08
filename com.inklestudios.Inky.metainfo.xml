@@ -19,10 +19,11 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://www.inklestudios.com/ink/img/inky-screenshot@2x.png</image>
+      <image type="source">https://raw.githubusercontent.com/manuq/com.inklestudios.Inky/master/inky-gnome-screenshot.png</image>
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.12.0" date="2021-02-22"/>
     <release version="0.11.0" date="2020-10-28"/>
   </releases>
   <content_rating type="oars-1.1" />
