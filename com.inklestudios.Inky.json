@@ -5,6 +5,9 @@
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.mono6"
+    ],
     "command": "inky",
     "separate-locales": false,
     "finish-args": [
@@ -14,6 +17,13 @@
         "--filesystem=home"
     ],
     "modules": [
+        {
+            "name": "mono6",
+            "buildsystem": "simple",
+            "build-commands": [
+                "/usr/lib/sdk/mono6/install.sh"
+            ]
+        },
         {
             "name": "inky",
             "buildsystem": "simple",
@@ -29,6 +39,10 @@
                     "only-arches": [
                         "x86_64"
                     ]
+                },
+                {
+                    "type": "patch",
+                    "path": "inklecate_linux.patch"
                 }
             ]
         },
