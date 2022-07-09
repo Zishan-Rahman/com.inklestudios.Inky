@@ -39,10 +39,6 @@
                     "only-arches": [
                         "x86_64"
                     ]
-                },
-                {
-                    "type": "patch",
-                    "path": "inklecate_linux.patch"
                 }
             ]
         },
