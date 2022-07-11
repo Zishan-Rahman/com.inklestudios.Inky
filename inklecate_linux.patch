@@ -1,6 +1,0 @@
---- Inky-linux-x64/resources/app.asar.unpacked/main-process/ink/inkjs-compatible/inklecate_linux	2022-03-15 10:53:51.150196663 -0300
-+++ Inky-linux-x64/resources/app.asar.unpacked/main-process/ink/inkjs-compatible/inklecate_linux	2022-03-14 20:20:58.371024763 -0300
-@@ -1,2 +1,2 @@
- #!/bin/sh
--/usr/bin/mono inklecate_win.exe "$@"
-+/app/bin/mono /app/inky/resources/app.asar.unpacked/main-process/ink/inkjs-compatible/inklecate_win.exe "$@"
