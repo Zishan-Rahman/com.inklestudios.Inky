@@ -34,8 +34,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/inkle/inky/releases/download/0.13.0/Inky_linux.zip",
-                    "sha256": "dafb15d169f7a812974aefe043f219eca45ee23e47880e98493334ca111581af",
+                    "url": "https://github.com/inkle/inky/releases/download/0.14.1/Inky_linux.zip",
+                    "sha256": "5ec581f94733c2bee7b396b3f720625538996fa8544da47f1d73e7e7241f2171",
                     "only-arches": [
                         "x86_64"
                     ]
