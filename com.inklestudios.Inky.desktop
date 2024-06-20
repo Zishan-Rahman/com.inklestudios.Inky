@@ -2,6 +2,7 @@
 Type=Application
 Categories=Development;IDE;
 Name=Inky
-Comment=Inky
+Comment=Write interactive narrative in inkle's markup language
+GenericName=Editor ink, inkle's markup language for writing interactive narrative in games  
 Exec=inky %U
 Icon=com.inklestudios.Inky
