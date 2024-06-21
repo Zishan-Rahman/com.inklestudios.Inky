@@ -48,7 +48,9 @@
             "build-commands": [
                 "install inky-wrapper.sh /app/bin/inky",
                 "install -Dm644 com.inklestudios.Inky.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml",
+                "install -Dm644 com.inklestudios.Inky.xml ${FLATPAK_DEST}/share/mime/packages/${FLATPAK_ID}.xml",
                 "install -Dm644 inky.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png",
+                "install -Dm644 inky.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/mimetypes/${FLATPAK_ID}.text-x-ink.png",
                 "install -Dm644 com.inklestudios.Inky.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
             ],
             "sources": [
@@ -62,6 +64,10 @@
                 {
                     "type": "file",
                     "path": "com.inklestudios.Inky.metainfo.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "com.inklestudios.Inky.xml"
                 },
                 {
                     "type": "file",
