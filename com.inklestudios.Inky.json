@@ -59,7 +59,7 @@
                     "type": "script",
                     "dest-filename": "inky-wrapper.sh",
                     "commands": [
-                        "exec /app/inky/Inky \"$@\""
+                        "exec zypak-wrapper /app/inky/Inky \"$@\""
                     ]
                 },
                 {
