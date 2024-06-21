@@ -3,7 +3,7 @@
     <mime-type type="text/x-ink">
         <sub-class-of type="application/x-executable"/>
         <sub-class-of type="text/plain"/>
-        <comment>Inky script</comment>
+        <comment>Ink narrative script</comment>
         <glob pattern="*.ink"/>
         <icon name="com.inklestudios.Inky.text-x-ink"/>
     </mime-type>
