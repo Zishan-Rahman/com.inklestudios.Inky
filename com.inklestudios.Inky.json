@@ -29,7 +29,7 @@
             "buildsystem": "simple",
             "build-commands": [
                 "mkdir -p /app/inky",
-                "mv -t /app/inky *"
+                "cp -r * /app/inky"
             ],
             "sources": [
                 {
