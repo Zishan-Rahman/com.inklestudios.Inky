@@ -1,5 +1,5 @@
 {
-    "app-id": "com.inklestudios.Inky",
+    "id": "com.inklestudios.Inky",
     "base": "org.electronjs.Electron2.BaseApp",
     "base-version": "23.08",
     "runtime": "org.freedesktop.Platform",
@@ -29,13 +29,14 @@
             "buildsystem": "simple",
             "build-commands": [
                 "mkdir -p /app/inky",
-                "mv -t /app/inky *"
+                "cp -r * /app/inky"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/inkle/inky/releases/download/0.14.1/Inky_linux.zip",
-                    "sha256": "5ec581f94733c2bee7b396b3f720625538996fa8544da47f1d73e7e7241f2171",
+                    "url": "https://github.com/inkle/inky/releases/download/0.15.1/Inky_linux.zip",
+                    "sha256": "1356a2bc8097ffffd43bcdfce30acac6d6687c9faead71bb74842e5d0380f861",
+                    "strip-components": 0,
                     "only-arches": [
                         "x86_64"
                     ]
@@ -48,7 +49,9 @@
             "build-commands": [
                 "install inky-wrapper.sh /app/bin/inky",
                 "install -Dm644 com.inklestudios.Inky.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml",
+                "install -Dm644 com.inklestudios.Inky.xml ${FLATPAK_DEST}/share/mime/packages/${FLATPAK_ID}.xml",
                 "install -Dm644 inky.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png",
+                "install -Dm644 inky.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/mimetypes/${FLATPAK_ID}.text-x-ink.png",
                 "install -Dm644 com.inklestudios.Inky.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
             ],
             "sources": [
@@ -56,12 +59,16 @@
                     "type": "script",
                     "dest-filename": "inky-wrapper.sh",
                     "commands": [
-                        "exec /app/inky/Inky \"$@\""
+                        "exec zypak-wrapper /app/inky/Inky \"$@\""
                     ]
                 },
                 {
                     "type": "file",
                     "path": "com.inklestudios.Inky.metainfo.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "com.inklestudios.Inky.xml"
                 },
                 {
                     "type": "file",
